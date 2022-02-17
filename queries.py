@@ -76,10 +76,10 @@ def viewPosts():
             c.content
         FROM 
             posts p
-        JOIN
+        LEFT JOIN
             accounts a1
             ON p.account_id = a1.id
-        JOIN
+        LEFT JOIN
             comments c
             ON c.post_id = p.id
         LEFT JOIN
