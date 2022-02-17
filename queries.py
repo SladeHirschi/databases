@@ -82,12 +82,13 @@ def viewPosts():
         JOIN
             comments c
             ON c.post_id = p.id
-        JOIN
+        LEFT JOIN
             accounts a2
             ON c.account_id = a2.id
         ORDER BY a1.username
         """)
     posts = data.fetchall()
+    print(posts)
     for post in posts:
         if post is None:
             print("There are none")
