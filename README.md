@@ -1,4 +1,4 @@
-## To run the tests on our project run the file 'queries.py' using python3. The program will then prompt for a function call.
-### Function names include 'addUser', 'addAccount', 'addRelation', 'addPost', 'addComment', 'addReply', 'viewPosts'.
+## To run the tests on our project run ./script.sh
+### Function names include addUser, addAccount, viewAccounts, addRelation, viewPosts, addPost, addComment, addReply, likeComment, viewPosts.
 
 ## The Program will then prompt you for the input on what to inject in the database.
