@@ -6,8 +6,8 @@ CREATE TABLE users (
 CREATE TABLE accounts (
     id INTEGER PRIMARY KEY,
     user_id INT,
-    name text,
-    password text,
+    username TEXT UNIQUE,
+    password TEXT,
     FOREIGN KEY (user_id) REFERENCES users(id)
 );
 
